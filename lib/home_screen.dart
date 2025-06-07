@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(height: 20,),
                 ElevatedButton(onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => BasicFunction(),));
-                }, child: Text('Stream builder')),
+                }, child: Text('Stream builder stream builder')),
                 SizedBox(height: 20,),
 
               ],
