@@ -190,11 +190,15 @@ class HomeScreen extends StatelessWidget {
                   child: Text('Tween Animation'),
                 ),
                 SizedBox(height: 20,),
+                ElevatedButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BasicFunction(),));
+                }, child: Text('Previous screen')),
+                SizedBox(height: 20,)
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) =>RippleAnimationDemo()),
+                      MaterialPageRoute(builder: (context) =>RippleAnimationDemo())
 
                     );
                   },
