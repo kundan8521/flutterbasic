@@ -92,6 +92,10 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => BasicFunction(),));
                 }, child: Text('Next screen')),
                 SizedBox(height: 20,),
+                ElevatedButton(onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BasicFunction(),));
+                }, child: Text('Previous screen')),
+                SizedBox(height: 20,),
 
               ],
             ),
