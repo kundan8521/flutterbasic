@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterbasic/animations/foo_animation.dart';
+import 'package:flutterbasic/animations/hero_animatin.dart';
 import 'package:flutterbasic/animations/ripple_animation.dart';
 import 'package:flutterbasic/basic_widget/design_box.dart';
 import 'package:flutterbasic/function/future_builder.dart';
@@ -193,7 +195,7 @@ class HomeScreen extends StatelessWidget {
                 ElevatedButton(onPressed: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => BasicFunction(),));
                 }, child: Text('Previous screen')),
-                SizedBox(height: 20,)
+                SizedBox(height: 20,),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -204,7 +206,28 @@ class HomeScreen extends StatelessWidget {
                   },
                   child: Text('Ripple Animation'),
                 ),
-                SizedBox(height: 20,)
+                SizedBox(height: 20,),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>HeroAnimationDemo())
+
+                    );
+                  },
+                  child: Text('Hero Animation'),
+                ),
+                SizedBox(height: 20,),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>FooAnimation())
+
+                    );
+                  },
+                  child: Text('Foo Animation'),
+                ),
               ],
             ),
           ),
